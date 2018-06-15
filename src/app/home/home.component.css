@@ -1,0 +1,11 @@
+.zoom {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.15);
+}

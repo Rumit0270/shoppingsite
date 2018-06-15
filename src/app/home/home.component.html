@@ -1,0 +1,11 @@
+<div class="row" style="text-align:center">
+  <div class="col-sm-3" *ngFor="let product of products" style="margin:10px ">
+    <label for="displayImage">{{ product.name | uppercase}}</label><br>
+    <img src="{{ product.url }}" width="250px" height="250px" class="zoom"><br>
+    <i>Price: {{ product.price }}</i><br>
+    <button type="button" name="button" class="btn btn-success" (click)="addToCart(product)"> <i class="fas fa-shopping-cart"></i>  Add to cart</button>
+  </div>
+</div>
+<hr>
+<br>
+<button type="button" class="btn btn-primary" (click)="buy()" align> Buy</button>

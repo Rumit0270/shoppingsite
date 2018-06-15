@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="jumbotron" align="center">
+    Fill up the form below to sign up
+
+  </div>
+
+</div>
+
+<div class="container" align="center">
+  <form class="" [formGroup] = "signupForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="firstName">First name:
+        <input type="text" name="firstName"  class="form-control" value="" formControlName="firstName">
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last name:
+        <input type="text" name="lastName" value="" class="form-control" formControlName="lastName">
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="userName">Username:
+        <input type="text" name="userName" value="" class="form-control" formControlName="userName">
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="email">E-mail:
+        <input type="email" name="email" value=""  class="form-control" formControlName="email">
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="dob">Date of birth:
+        <input type="date" name="dob" value="" class="form-control" formControlName="dob">
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:
+        <input type="password" name="password" value=""  class="form-control" formControlName="password">
+      </label>
+    </div>
+
+    <button type="submit"  class = "btn btn-submit" name="button" [disabled]="!signupForm.valid">Sign Up</button>
+
+  </form>
+</div>
